@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .center{
+    justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
     max-width: 1280px;
@@ -13,13 +14,24 @@
     padding: 0 2%;
 }
 
+body{
+    height: 100%;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+}
+
 header{
+    height: 200px;
     padding: 20px 0;
+}
+
+img {
+    width: 66px;
 }
 
 .logo{
     width: 20px;
-    
+    margin-right: auto;   
 }
 
 .menu{
@@ -30,11 +42,69 @@ header{
 .menu a{
     color: black;
     text-decoration: none;
-    font-weight: bold; 
+    font-style: normal;
     margin-right: 15px;
+    font-weight: 400;
 }
 
-.menu p:hover {
+.menu a:hover {
     color: #006341; 
-    
+}
+
+section.about{
+    height: calc(100% - 200px);
+    position: relative; 
+}
+
+.extras{
+    position: absolute;
+    bottom: -450px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #006341;
+}
+
+.copoImg{
+    width: 470px;
+    height: 730px;
+}
+
+.socialMedia{
+    position: absolute;
+    right: 500px;
+    top: 200px;
+}
+
+.socialMedia img{
+    display: block;
+    width: 30px;
+    margin: 20px 0;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 50px;
+    padding: 50px;
+}
+
+.subtitle{
+    margin: -90px 0;
+    padding: 50px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.textStarbucks button{
+    border: 0;
+    background-color: #006341;
+    color: white;
+    border-radius: 100px;
+    width:150px;
+    height:50px;
+    cursor:pointer;
+    margin-top: 50px;
 }
